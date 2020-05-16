@@ -34,15 +34,15 @@
     height: calc(100vh - 100px);
     background-color: #2f3e51;
     padding: 20px 20px 0;
-    .group{
+    .group {
       margin-bottom: 40px;
       text-decoration: none;
       color: white;
-        .groups__grop-name {
+        %__grop-name {
           font-size: 15px;
          margin-bottom: 5px;
         }
-        .groups__last-messages { 
+        &__last-messages { 
           font-size: 11px;
         }
       }
@@ -62,15 +62,15 @@
     justify-content: space-between;
     border-bottom: solid 1px #eee;
     overflow: scroll;
-    .main-header__left-box {
+    &__left-box {
       margin-top: 35px;
-      .main-header__left-box__current-group {
+      &__current-group {
         font-size: 20px;
         color: #333;
         margin-bottom: 15px;
         }
       }
-      .main-header__edit-btn {
+      &__edit-btn {
         height: 40px;
         line-height: 40px;
         padding: 0 20px;
@@ -88,21 +88,21 @@
     background-color: #fafafa;
     .message {
       padding-bottom: 40px;
-        .message__user-info {
+        &__user-info {
           display: flex;
           margin-bottom: 10px;
-            .message__user-info__talker {
+            &__talker {
               color: #333333;
               font-size: 16px;
               font-weight: bold;
               }
-            .message__user-info__date {
+            &__date {
               color: #999999;
               font-size: 12px;
               margin-left: 10px;
               }  
           }
-        .message__text {
+        &__text {
           color: #434a54;
           font-size: 14px;
           margin-bottom: 10px;
