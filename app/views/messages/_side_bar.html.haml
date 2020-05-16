@@ -1,0 +1,21 @@
+.side_bar
+  .side-header
+    .side-header__box
+      %p.side-header__box__username  
+        takumi 
+      %ul.side-header__box__menu  
+        %li.side-header__box__edit-user
+          = link_to'#' do
+            = icon('fas', 'edit')
+        %li.side-header__box__new-group
+          = link_to'#' do
+            = icon('fas', 'cog')
+  .groups
+    .group
+      %p.groups__grop-name
+        tech
+      %p.groups__last-messages
+        last message
+        
+
+
