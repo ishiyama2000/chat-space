@@ -1,0 +1,34 @@
+.main_chat
+  .main-header 
+    .main-header__left-box
+      .main-header__left-box__current-group
+        takumi-group
+    .main-header__edit-btn
+      edit   
+  .messages
+    .message
+      .message__user-info
+        %p.message__user-info__talker
+          takumi
+        %p.message__user-info__date
+          2020/01/01
+      %p.message__text
+        あけおめ
+    .message
+      .message__user-info
+        %p.message__user-info__talker
+          takumi
+        %p.message__user-info__date
+          2020/01/02
+      %p.message__text
+        あけおめ2    
+
+
+  .form
+    %form.new_massage
+      .input-box
+        %input{type: "text", class: "input-box__text", placeholder: "type a message"}
+        %label{class: "input-box__image"}
+          = icon('fas', 'image')
+          %input{type: "file", class: "input-box__image__file"}
+      %input{type: "submit", class:"submit-btn"}
