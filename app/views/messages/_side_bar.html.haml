@@ -17,11 +17,11 @@
         -#   tech
         -# %p.groups__last-messages
         -#   last message
-        = link_to '#' do
-          .group__name
+        = link_to group_messages_path(group) do
+          .groups__grop-name
             = group.name
-          .group__message
-            メッセージはまだありません。
+          .groups__last-messages
+            = group.show_last_message
 
         
 
