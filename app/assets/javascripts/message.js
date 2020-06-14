@@ -64,5 +64,5 @@ $('#new_message').on('submit', function(e){
     alert('error');
   });
   return false;
-})
+  });
 });
