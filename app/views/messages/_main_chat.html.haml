@@ -24,7 +24,8 @@
         .main-header__left-box__member__name
           - @group.users.each do |user|
             = user.name
-    = link_to new_group_path(@group) do
+            
+    = link_to edit_group_path(@group) do
       .main-header__edit-btn
         edit   
     

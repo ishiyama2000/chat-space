@@ -22,7 +22,7 @@ class GroupsController < ApplicationController
 
   def edit
     @group = Group.find(params[:id])
-    redirect_to root_path, notice: 'グループを編集しました'
+    # redirect_to root_path, notice: 'グループを編集しました'
   end
 
   def update
