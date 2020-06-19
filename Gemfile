@@ -45,13 +45,7 @@ group :development, :test do
   gem 'rails-controller-testing'
   gem 'factory_bot_rails'
   gem 'faker'
- require "capistrano/setup"
-require "capistrano/deploy"
-require 'capistrano/rbenv'
-require 'capistrano/bundler'
-require 'capistrano/rails/assets'
-require 'capistrano/rails/migrations'
-require 'capistrano3/unicorn'
+ 
 
 Dir.glob("lib/capistrano/tasks/*.rake").each { |r| import r }
 end
